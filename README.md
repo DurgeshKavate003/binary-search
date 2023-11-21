@@ -6,15 +6,29 @@ This Java code provides an implementation of binary search, both iteratively and
 
 1. **Main Class (`Main`):**
    - The `main` method serves as the entry point.
-   - Initializes a sorted array (`sortedArray`) and a target value (`target`).
+   - Initializes a sorted array (`sortedArray`).
+   - ### Array
+        ``` java
+        int[] sortedArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
    - Two variables (`left` and `right`) are used to track the search range.
 
-2. **Iterative Binary Search (`binarySearchIterative`):**
+2. **User Input:**
+   - The code now uses the `Scanner` class to obtain user input from the console.
+   - A prompt is displayed, asking the user to enter a number.
+   - The entered number is stored in the variable `target`.
+   - ### Code 
+        ``` java
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter a Number : ");
+        int target = myObj.nextInt();
+
+
+4. **Iterative Binary Search (`binarySearchIterative`):**
    - Method for iteratively searching for the target value.
    - Uses a while loop to update pointers and narrow down the search range.
    - Returns `true` if the target is found; otherwise, returns `false`.
 
-3. **Recursive Binary Search (`binarySearchRecursive`):**
+5. **Recursive Binary Search (`binarySearchRecursive`):**
    - Recursive implementation of binary search.
    - Base case checks for an empty search range.
    - Returns `true` if the target is found; otherwise, makes recursive calls on the appropriate half; otherwise, returns `false`.
