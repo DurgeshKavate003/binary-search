@@ -17,7 +17,7 @@ This Java code provides an implementation of binary search, both iteratively and
 3. **Recursive Binary Search (`binarySearchRecursive`):**
    - Recursive implementation of binary search.
    - Base case checks for an empty search range.
-   - Returns `true` if the target is found; otherwise, makes recursive calls on the appropriate half.
+   - Returns `true` if the target is found; otherwise, makes recursive calls on the appropriate half; otherwise, returns `false`.
 
 ## Example
 
