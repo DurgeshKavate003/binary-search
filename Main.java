@@ -2,7 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
         int[] sortedArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int target = 2;
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter a Number : ");
+
+        int target = myObj.nextInt();
 
         int left = 0;
         int right = sortedArray.length - 1;
